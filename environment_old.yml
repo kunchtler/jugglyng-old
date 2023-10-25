@@ -1,0 +1,33 @@
+name: jugglyng
+
+channels:
+- conda-forge
+
+dependencies:
+- python>=3.9
+# Graphiques
+- jupyter
+- jupyterlab
+- notebook
+- ipywidgets
+- pythreejs
+# Pour lire les notebook de présentation
+- jupytext
+- rise
+# Pour utiliser les algos de génération d'automates
+- graphviz
+# Recompilation de jupyter lab pour installer jp_proxy_widget
+- nodejs
+# Algorithme de composition
+- numpy
+- gcc
+- cppyy
+- sage
+- pip
+- pip:
+  - recordclass==0.14.3
+  - typing-extensions
+  # Son
+  - jp_proxy_widget
+# Autres
+- pylatex
