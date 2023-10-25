@@ -1,3 +1,6 @@
+#ifndef DLX_M_HPP
+#define DLX_M_HPP
+
 #include <vector>
 #include <unordered_map>
 #include <functional>
@@ -145,3 +148,5 @@ class DLX {
 };
 
 }
+
+#endif

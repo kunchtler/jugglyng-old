@@ -1,3 +1,4 @@
+// -*- coding: utf-8 -*-
 /*!
  *  howler.js v2.2.1
  *  howlerjs.com

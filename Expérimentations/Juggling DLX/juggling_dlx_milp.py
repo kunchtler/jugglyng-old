@@ -1,4 +1,4 @@
-from recordclass import StructClass
+from recordclass import dataobject, StructClass
 from typing import List, Dict, Tuple, Union, Set, Any, Optional
 from sage.all import MixedIntegerLinearProgram
 from DLX.dlxm import DLXM
@@ -45,7 +45,7 @@ long int choose_{}(DLX_M::DLX* dlx) {{
 _choose_counter = 0
 
 
-class Throw(StructClass):
+class Throw(dataobject):
     ball: str
     time: int
     max_height: int

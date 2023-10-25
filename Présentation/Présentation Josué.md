@@ -6,7 +6,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.11.3
+      jupytext_version: 1.14.5
   kernelspec:
     display_name: Python 3
     language: python
@@ -377,6 +377,10 @@ forbidden_multiplex = [(1, 2), (1, 3), (1, 4), (2, )]
 
 ```python slideshow={"slide_type": "fragment"}
 solve_and_simulate(music, nb_hands, max_height, max_weight, forbidden_multiplex, colors, sides, method="MILP")
+```
+
+```python
+open('../')
 ```
 
 <!-- #region slideshow={"slide_type": "-"} -->

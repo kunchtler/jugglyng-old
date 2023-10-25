@@ -390,6 +390,26 @@ let fig_3_1_2 =
   ("3_1_2", simple_juggling_seq 10 0.7 [3; 1; 2; 3; 1; 2; 3; 1; 2; 3; 1; 2] []
      ~show_time:false ~show_height:true ?juggle_forever:(Some true))
 
+let fig_333 =
+("333", simple_juggling_seq 7 0.7 [3; 3; 3; 3; 3; 3; 3; 3; 3] []
+    ~show_time:false ~show_height:false ?juggle_forever:(Some true))
+
+let fig_423 =
+  ("423", simple_juggling_seq 7 0.7 [4; 2; 3; 4; 2; 3; 4; 2; 3] []
+      ~show_time:false ~show_height:false ?juggle_forever:(Some true))
+
+let fig_40 =
+  ("20", simple_juggling_seq 7 0.7 [2;0; 2; 0;2; 0; 2; 0; 2; 0; 2; 0] []
+      ~show_time:false ~show_height:false ?juggle_forever:(Some true))
+
+let fig_empty =
+  ("empty", simple_juggling_seq 7 0.7 [0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0; 0] []
+      ~show_time:false ~show_height:false ?juggle_forever:(Some true))
+
+let fig_31 = 
+  ("31", simple_juggling_seq 7 0.7 [1; 3; 1; 3; 1; 3; 1; 3; 1; 3; 1; 3] []
+      ~show_time:false ~show_height:false ?juggle_forever:(Some true))
+
 let fig_2_3_2 =
   ("2_3_2", simple_juggling_seq 5 0.7 [2; 3; 2; 0; 0; 0; 0; 0] ["2"; "3"; "2"; ""; ""]
      ~show_time:false ~show_height:false)
@@ -623,7 +643,7 @@ let () =
     fig_do_re_mi; fig_re_do_mi; fig_3_1_2; fig_2_3_2; fig_3_0_3_0;
     fig_13_2_0; fig_aplatissement; fig_multihand;
     fig_pre_traitement; fig_pre_traitement_timeline;
-    fig_automate; fig_automate_musical
+    fig_automate; fig_automate_musical; fig_333; fig_423; fig_40; fig_31
   ] in
   List.iteri (fun i (name, x) -> Metapost.emit ("figure-" ^ name) x) figs;
 
